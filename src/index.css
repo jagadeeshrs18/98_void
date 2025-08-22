@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* SiteScan.io - Premium AI Auditing Platform Design System */
+
+@layer base {
+  :root {
+    /* Base colors - Dark theme */
+    --background: 222 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Brand colors - Clean blue theme */
+    --primary: 200 98% 39%;
+    --primary-foreground: 210 40% 98%;
+    --primary-glow: 200 98% 50%;
+    --primary-dark: 200 98% 30%;
+    --primary-light: 200 98% 60%;
+
+    --secondary: 217 32% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 32% 17%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 200 98% 39%;
+    --accent-foreground: 210 40% 98%;
+
+    /* Semantic colors */
+    --success: 142 76% 36%;
+    --success-foreground: 210 40% 98%;
+    --success-glow: 142 76% 50%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 210 40% 98%;
+    --warning-glow: 38 92% 60%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 40% 98%;
+    --destructive-glow: 0 72% 60%;
+    --info: 200 98% 39%;
+    --info-foreground: 210 40% 98%;
+
+    --border: 217 32% 17%;
+    --input: 217 32% 17%;
+    --ring: 200 98% 39%;
+
+    --radius: 0.75rem;
+
+    /* Clean gradients - Dark theme */
+    --gradient-primary: linear-gradient(135deg, hsl(200 98% 39%) 0%, hsl(217 91% 60%) 100%);
+    --gradient-background: linear-gradient(135deg, hsl(222 84% 4.9%) 0%, hsl(217 32% 12%) 50%, hsl(222 84% 4.9%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(222 84% 4.9%) 0%, hsl(217 32% 17%) 100%);
+    --gradient-success: linear-gradient(135deg, hsl(142 76% 36%) 0%, hsl(142 76% 50%) 100%);
+    --gradient-warning: linear-gradient(135deg, hsl(38 92% 50%) 0%, hsl(38 92% 60%) 100%);
+    --gradient-error: linear-gradient(135deg, hsl(0 72% 51%) 0%, hsl(0 72% 60%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(222 84% 4.9%) 0%, hsl(217 32% 17%) 100%);
+    --gradient-secondary: linear-gradient(180deg, hsl(222 84% 4.9%) 0%, hsl(217 32% 12%) 100%);
+    
+    /* Shadows and glows */
+    --shadow-glow: 0 0 60px hsl(200 98% 39% / 0.4);
+    --shadow-card: 0 8px 25px -5px hsl(0 0% 0% / 0.1), 0 20px 40px -10px hsl(0 0% 0% / 0.1);
+    --shadow-elevated: 0 25px 50px -12px hsl(0 0% 0% / 0.25);
+    --shadow-success: 0 0 30px hsl(142 76% 36% / 0.3);
+    --shadow-warning: 0 0 30px hsl(38 92% 50% / 0.3);
+    --shadow-error: 0 0 30px hsl(0 72% 51% / 0.3);
+    
+    /* Animation system */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-spring: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    --transition-fade: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+
+  .light {
+    /* Base colors - Light theme */
+    --background: 0 0% 100%;
+    --foreground: 222 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 84% 4.9%;
+
+    /* Brand colors remain the same but with light foreground */
+    --primary: 200 98% 39%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 84% 4.9%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 46.9%;
+
+    --accent: 200 98% 39%;
+    --accent-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 200 98% 39%;
+
+    /* Clean gradients - Light theme */
+    --gradient-background: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(210 40% 98%) 50%, hsl(0 0% 100%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(210 40% 98%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(210 40% 98%) 100%);
+    --gradient-secondary: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(210 40% 98%) 100%);
+    
+    /* Light theme shadows */
+    --shadow-card: 0 8px 25px -5px hsl(0 0% 0% / 0.05), 0 20px 40px -10px hsl(0 0% 0% / 0.05);
+    --shadow-elevated: 0 25px 50px -12px hsl(0 0% 0% / 0.15);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
